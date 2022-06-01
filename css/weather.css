@@ -69,24 +69,38 @@ footer .subscribe {
     max-width: 900px ;
 }
 .header .search input,
-footer .subscribe input {
+footer .subscribe input,
+.form .form-inputs input,
+.form .form-inputs textarea {
     background-color: #1e202b;
     transition: 1s;
     border: none;
 }
 .header .search input:focus,
-footer .subscribe input:focus {
+footer .subscribe input:focus,
+.form .form-inputs input:focus,
+.form .form-inputs textarea:focus {
     box-shadow: none;
     background-color: rgba(0,0,0,.5);
 }
-footer {
-    background-color: #323544;
+.form .form-inputs input,
+.form .form-inputs textarea {
+    border: 1px solid #323544;
 }
-.weather-banner .first-day, .weather-banner .third-day {
-    background-color: #323544;
+.weather-banner .container {
+    top: -100px;
 }
 .weather-banner .day p {
     background-color: rgba(0,0,0,.1);
+}
+.weather-banner .first-day {
+    background-color: #07415096;
+}
+.weather-banner .first-day .deg h2 {
+    font-size: 2.5rem;
+}
+.weather-banner .next-day {
+    background-color: #262936;
 }
 .weather-banner #days .day {
     transition: .4s;
@@ -94,17 +108,8 @@ footer {
 .weather-banner #days .day:hover {
     transform: scale(1.05) translate(5px);
 }
-.weather-banner .first-day .deg h2 {
-    font-size: 2.5rem;
-}
-.weather-banner .first-day .deg .img-deg {
-    width: 90px;
-}
-.weather-banner .second-day {
-    background-color: #262936;
-}
-.weather-banner .container {
-    top: -100px;
+footer, .headwe-bar {
+    background-color: #323544;
 }
 footer .icons svg {
     background-color: #1e202b;
@@ -117,4 +122,11 @@ footer .icons svg {
 footer .icons svg:hover {
     background-color: #009ad8;
     color: #fff;
+}
+.headwe-bar a {
+    transition: .3s;
+}
+.headwe-bar a:hover {
+    text-decoration: underline !important;
+    color: #009ad8 !important;
 }
