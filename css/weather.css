@@ -1,0 +1,120 @@
+:root {
+    --hoverLinks: #009ad8;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main-bg {
+    background-color: #009ad8 ;
+}
+.text-main-color {
+    color: #009ad8 ;
+}
+body,nav {
+    background-color: #1e202b;
+}
+.navbar-toggler {
+    border: transparent !important;
+    border-radius: 50%;
+    transition: .5s;
+    margin: 0 !important;
+    width: 45px;
+    height: 45px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler:hover {
+    color: #009ad8 !important;
+    border: 1px solid #009ad8 !important;
+}
+nav .navbar-brand .link-logo span:nth-child(2) {
+    font-size: .7rem;
+}
+nav .nav-link {
+    color: white;
+    transition: 1s;
+    border: 2px solid transparent;
+}
+nav .nav-link.active ,nav .nav-link:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+@media (max-width: 992px) {
+    nav ul {
+        margin-top: 2rem;
+        background-color: #262936;
+        border-radius: .5rem;
+        text-align: center;
+    }
+    nav .nav-link.active,nav .nav-link {
+        border-width: 0px;
+        border-bottom: 1px solid #50535d;
+        border-radius: 0 !important;
+    }
+    li:last-child .nav-link {
+        border-width: 0px;
+    }
+    nav .nav-link.active ,nav .nav-link:hover {
+        color: #009ad8;
+        border-color: #50535d;
+    }
+}
+.header {
+    background-image: url(../images/banner.png);
+    height: 300px;
+}
+.header .search,
+footer .subscribe {
+    max-width: 900px ;
+}
+.header .search input,
+footer .subscribe input {
+    background-color: #1e202b;
+    transition: 1s;
+    border: none;
+}
+.header .search input:focus,
+footer .subscribe input:focus {
+    box-shadow: none;
+    background-color: rgba(0,0,0,.5);
+}
+footer {
+    background-color: #323544;
+}
+.weather-banner .first-day, .weather-banner .third-day {
+    background-color: #323544;
+}
+.weather-banner .day p {
+    background-color: rgba(0,0,0,.1);
+}
+.weather-banner #days .day {
+    transition: .4s;
+}
+.weather-banner #days .day:hover {
+    transform: scale(1.05) translate(5px);
+}
+.weather-banner .first-day .deg h2 {
+    font-size: 2.5rem;
+}
+.weather-banner .first-day .deg .img-deg {
+    width: 90px;
+}
+.weather-banner .second-day {
+    background-color: #262936;
+}
+.weather-banner .container {
+    top: -100px;
+}
+footer .icons svg {
+    background-color: #1e202b;
+    color: #009ad8;
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+footer .icons svg:hover {
+    background-color: #009ad8;
+    color: #fff;
+}
